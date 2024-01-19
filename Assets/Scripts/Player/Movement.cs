@@ -11,9 +11,10 @@ namespace Scripts.Player
         [SerializeField] private Animator _anim;
         [SerializeField] private float speed;
         [SerializeField] private VariableJoystick _movementJoystick;
+        [SerializeField] private SpriteRenderer img;
 
         private CharacterInput inputs;
-        private SpriteRenderer img;
+
         private Vector2 _direction;
         private Coroutine flipRoutine;
 
@@ -23,7 +24,10 @@ namespace Scripts.Player
         private void Awake()
         {
             inputs = new CharacterInput();
-            img = GetComponent<SpriteRenderer>();
+        }
+
+        private void Start()
+        {
             CheckIfIsMobile();
         }
 
@@ -67,7 +71,8 @@ namespace Scripts.Player
 
         private void CheckIfIsMobile()
         {
-            isMobile = SetMobile.isMobile;
+            //isMobile = SetMobile.isMobile;
+            isMobile = CheckMobile.Instance.CheckIfWebGLIsMobile();
             _movementJoystick.gameObject.SetActive(isMobile);
         }
 
