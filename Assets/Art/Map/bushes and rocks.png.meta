@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: 23c13e7aa22cafc4faf06e881f330eda
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bushes and rocks_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 70
+        width: 14
+        height: 40
+      alignment: 9
+      pivot: {x: 0.50930375, y: 0.06039772}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1e31708dbcd2c45a607615df7c1c9b
+      internalID: 1868270453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 103
+        width: 25
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5052103, y: 0.30462188}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8eaae1d8ea8f444e90e7d531194fa93
+      internalID: 893425641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_2
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 70
+        width: 21
+        height: 34
+      alignment: 9
+      pivot: {x: 0.54962015, y: 0.09391852}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21572eeae098ae244bb6c701ab1a14c6
+      internalID: 1437517594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 70
+        width: 38
+        height: 36
+      alignment: 9
+      pivot: {x: 0.52056605, y: 0.058588877}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7452c0987c5c148affe287b4583740
+      internalID: 691713809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 85
+        width: 26
+        height: 21
+      alignment: 9
+      pivot: {x: 0.50006175, y: -0.3128226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b3ce67d4e3a634980b58ea8e50ded7
+      internalID: -157391563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_5
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 70
+        width: 19
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5068556, y: 0.091875456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d678c4d0d2f8eb54e91bc9210dc00812
+      internalID: -524816110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 70
+        width: 26
+        height: 29
+      alignment: 9
+      pivot: {x: 0.515029, y: 0.0912765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46aa8e627749011408e97fe9de876f34
+      internalID: -659488202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 48
+        width: 21
+        height: 17
+      alignment: 9
+      pivot: {x: 0.52480996, y: 0.17053783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a312d5aa964191a4580f86d2ad643be1
+      internalID: 2074587848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_9
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 48
+        width: 14
+        height: 9
+      alignment: 9
+      pivot: {x: 0.4813927, y: 0.3118583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a4bec0453047d47b5100ce34dcb560
+      internalID: -1928487840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 48
+        width: 21
+        height: 13
+      alignment: 9
+      pivot: {x: 0.49379748, y: 0.22947605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c613b9c5db0b948be4b507565867b8
+      internalID: 2117410510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_11
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 48
+        width: 13
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5000006, y: 0.26844066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d6d04869625dc43b07f0b86f5a447b
+      internalID: 54997301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_12
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 48
+        width: 21
+        height: 12
+      alignment: 9
+      pivot: {x: 0.4751903, y: 0.20693175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38561da7aea3c864d9a4f482f024f4db
+      internalID: -1289973013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_13
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 48
+        width: 7
+        height: 8
+      alignment: 9
+      pivot: {x: 0.48139408, y: 0.20693254}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d54432195fc8e4087f37414db8710b
+      internalID: -816964818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_14
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 48
+        width: 11
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5118408, y: 0.18160544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dbf1d317f3dfb44a2f0b0e2f27670f
+      internalID: -1622096749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_15
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 48
+        width: 9
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0.23949575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a18297265fb1148b48e75fc6f8d514
+      internalID: 789406210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_16
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 48
+        width: 24
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 0.11792628}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31740ff971fec14e9460609461a70ed
+      internalID: -1872129081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_17
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 20
+        width: 34
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5077092, y: -0.22752427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f2b5430abf8924a9a37d993bf1a8c4
+      internalID: -1634355862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_18
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 9
+        width: 31
+        height: 34
+      alignment: 9
+      pivot: {x: 0.44957942, y: -0.080014564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdafc810b685c147b2e4a679679d20e
+      internalID: -2125153652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_19
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 9
+        width: 26
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5751457, y: 0.10083885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8fdd8bcc4ddfaa43be1298e192a4d38
+      internalID: -541741156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_20
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 14
+        width: 26
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5100192, y: 0.10639679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e6d48e94ef8c54dbaef96673b3e23b
+      internalID: -1947463508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_21
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 8
+        width: 24
+        height: 35
+      alignment: 9
+      pivot: {x: 0.47286415, y: 0.09115163}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01ebcd228b8dc340872cd8428aebba9
+      internalID: -1161402366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_22
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 27
+        width: 22
+        height: 21
+      alignment: 9
+      pivot: {x: 0.52960277, y: 0.12784994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06abab885523eb944900d7d3db83080b
+      internalID: 794754524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_23
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 7
+        width: 12
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e47cc64bcb1f7543b2ff871e5d8f973
+      internalID: 1161969754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 70
+        width: 18
+        height: 23
+      alignment: 9
+      pivot: {x: 0.51447254, y: 0.12056865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3a74821df6e3b49bc38b7e492040be
+      internalID: -1470264566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_24
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 5
+        width: 13
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5200395, y: 0.27670997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a7c2ce719d7f44a9d5280b0c70c8c9
+      internalID: 489228176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_25
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 7
+        width: 24
+        height: 12
+      alignment: 9
+      pivot: {x: 0.56512624, y: 0.31547585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bee72756fda6fb488af97d07a973e4a
+      internalID: 818262151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes and rocks_26
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 70
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab386f34efafd3d48856ac032e5cd77c
+      internalID: -1134504602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bushes and rocks_24: 489228176
+      bushes and rocks_6: -659488202
+      bushes and rocks_2: 1437517594
+      bushes and rocks_5: -524816110
+      bushes and rocks_18: -2125153652
+      bushes and rocks_23: 1161969754
+      bushes and rocks_21: -1161402366
+      bushes and rocks_7: -1470264566
+      bushes and rocks_0: 1868270453
+      bushes and rocks_8: 2074587848
+      bushes and rocks_26: -1134504602
+      bushes and rocks_9: -1928487840
+      bushes and rocks_14: -1622096749
+      bushes and rocks_10: 2117410510
+      bushes and rocks_13: -816964818
+      bushes and rocks_4: -157391563
+      bushes and rocks_19: -541741156
+      bushes and rocks_16: -1872129081
+      bushes and rocks_15: 789406210
+      bushes and rocks_20: -1947463508
+      bushes and rocks_3: 691713809
+      bushes and rocks_22: 794754524
+      bushes and rocks_17: -1634355862
+      bushes and rocks_1: 893425641
+      bushes and rocks_12: -1289973013
+      bushes and rocks_11: 54997301
+      bushes and rocks_25: 818262151
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

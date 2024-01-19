@@ -1,0 +1,4 @@
+repository "Rose of the Fox@SpaceShooterNFTGame@cloud"
+  path "/"
+    br "/main"
+    co "/main"
