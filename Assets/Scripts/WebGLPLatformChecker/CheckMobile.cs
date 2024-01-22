@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class CheckMobile : MonoBehaviour
 {
-    public bool IsMobile = true;
+    public bool IsMobile = false;
     public static CheckMobile Instance;
 
     private void Awake()

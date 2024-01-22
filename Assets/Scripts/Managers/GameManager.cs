@@ -12,6 +12,9 @@ namespace Scripts.Managers
 		public GameObject Player;
 
 		public static GameManager instance;
+
+        private Coroutine routine;
+
         private void Awake()
         {
             // If there is an instance, and it's not me, delete myself.
@@ -33,13 +36,14 @@ namespace Scripts.Managers
 
         private void HandleRespawn()
         {
-            bool tooFar = Vector2.Distance(Player.transform.position, spawnPos.position) > 500f;
-
-            print(Vector2.Distance(Player.transform.position, spawnPos.position));
+            bool tooFar = Vector2.Distance(Player.transform.position, spawnPos.position) > 40f;
 
             if (tooFar)
             {
-                Respawn();
+                if (routine == null)
+                {
+                    StartCoroutine(RespawnEffect());
+                }
             }
         }
 
@@ -50,11 +54,13 @@ namespace Scripts.Managers
 
         private IEnumerator RespawnEffect()
         {
+            yield return FadeScreen(blackScreen, 0f, 1f, 1f);
+
             yield return FadeScreen(blackScreen, 1f, 0f, 1f);
 
-            yield return new WaitForSeconds(1f);
+            Respawn();
 
-            yield return FadeScreen(blackScreen, 0f, 1f, 1f);
+            routine = null;
         }
 
         private IEnumerator FadeScreen(CanvasGroup canvasGroup, float startAlpha, float targetAlpha, float duration)

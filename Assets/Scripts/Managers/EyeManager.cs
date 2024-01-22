@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
+using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 namespace Scripts.Managers
 {
@@ -10,22 +12,37 @@ namespace Scripts.Managers
         [SerializeField] private Animator _anim;
         [SerializeField] private GameObject eye;
 
+        private float minScale = 1f;
+        private float maxScale = 3f;
+        [SerializeField] private float minDistance = 5f;
+        [SerializeField] private float maxDistance = 20f;
+        private float blinkInterval = 1f;
+
+        private float scaleVariety;
+
         private void Start()
         {
             player = GameManager.instance.Player;
 
-            eye.transform.localScale *= Random.Range(1f, 2f);
+            scaleVariety = Random.Range(1f, 2f);
 
-            StartCoroutine(SetRed());
-
-            InvokeRepeating(nameof(Blink), 2f, 1f);
+            InvokeRepeating(nameof(Blink), 2f, blinkInterval);
         }
 
         private void Update()
         {
-            if (Vector2.Distance(player.transform.position, transform.position) > 5)
-            {
+            float distance = Vector2.Distance(player.transform.position, transform.position);
 
+            float scale = Mathf.Lerp(minScale, maxScale, 1 - Mathf.InverseLerp(minDistance, maxDistance, distance));
+            transform.DOScale(scale, 0.5f);
+
+            float lerpValue = Mathf.InverseLerp(minDistance, maxDistance, distance);
+
+            Color lerpedColor = Color.Lerp(Color.yellow, Color.red, lerpValue);
+            eye.GetComponent<SpriteRenderer>().color = lerpedColor;
+
+            if (distance > 5)
+            {
                 Vector3 dir = player.transform.position - transform.position;
                 float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
                 angle -= 90;
@@ -39,13 +56,6 @@ namespace Scripts.Managers
             {
                 _anim.SetTrigger("Blink");
             }
-        }
-
-        private IEnumerator SetRed()
-        {
-            yield return new WaitForSeconds(5.5f);
-            eye.GetComponent<SpriteRenderer>().color = Color.red;
-            _anim.SetTrigger("Grow");
         }
     }
 }
