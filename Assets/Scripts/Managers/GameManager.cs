@@ -9,6 +9,9 @@ namespace Scripts.Managers
 	{
         [SerializeField] private Transform spawnPos;
         [SerializeField] private CanvasGroup blackScreen;
+        [SerializeField] private GameObject sfxPlayer;
+        [SerializeField] private AudioClip respawnSFX;
+        [SerializeField] private AudioSource mainAmbience;
 		public GameObject Player;
 
 		public static GameManager instance;
@@ -32,18 +35,24 @@ namespace Scripts.Managers
         private void Update()
         {
             HandleRespawn();
+
+            MakeThemeLouderAsThePlayerGetsFurther();
+        }
+
+        private void MakeThemeLouderAsThePlayerGetsFurther()
+        {
+            float distance = Vector2.Distance(Player.transform.position, spawnPos.position);
+
+            mainAmbience.volume = Mathf.Lerp(0f, 1f, distance / 50);
         }
 
         private void HandleRespawn()
         {
-            bool tooFar = Vector2.Distance(Player.transform.position, spawnPos.position) > 40f;
+            bool tooFar = Vector2.Distance(Player.transform.position, spawnPos.position) > 35f;
 
             if (tooFar)
             {
-                if (routine == null)
-                {
-                    StartCoroutine(RespawnEffect());
-                }
+                StartCoroutine(RespawnEffect());
             }
         }
 
@@ -54,13 +63,19 @@ namespace Scripts.Managers
 
         private IEnumerator RespawnEffect()
         {
+            PlayRespawnSFX();
             yield return FadeScreen(blackScreen, 0f, 1f, 1f);
 
-            yield return FadeScreen(blackScreen, 1f, 0f, 1f);
+            yield return FadeScreen(blackScreen, 1f, 0f, 3f);
 
             Respawn();
 
             routine = null;
+        }
+
+        private void PlayRespawnSFX()
+        {
+            Instantiate(sfxPlayer, transform).GetComponent<SFXPlayer>().PlaySFXWithVolume(respawnSFX, 0.1f);
         }
 
         private IEnumerator FadeScreen(CanvasGroup canvasGroup, float startAlpha, float targetAlpha, float duration)

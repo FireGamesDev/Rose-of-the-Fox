@@ -12,6 +12,7 @@ namespace Scripts.Player
         [SerializeField] private float speed;
         [SerializeField] private VariableJoystick _movementJoystick;
         [SerializeField] private SpriteRenderer img;
+        [SerializeField] private AudioSource footstepsSFX;
 
         private CharacterInput inputs;
 
@@ -36,6 +37,8 @@ namespace Scripts.Player
             GetDirection();
             SetAnim();
             SetSpriteFacing();
+
+            PlayFootsteps();
         }
 
         private void FixedUpdate()
@@ -99,6 +102,15 @@ namespace Scripts.Player
             {
                 Flip();
             }
+        }
+
+        private void PlayFootsteps()
+        {
+            if (_direction != Vector2.zero)
+            {
+                footstepsSFX.mute = false;
+            }
+            else { footstepsSFX.mute = true; }
         }
         #endregion
     }
