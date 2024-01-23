@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 namespace Scripts.Managers
 {
@@ -40,7 +39,7 @@ namespace Scripts.Managers
             float distance = Vector2.Distance(player.transform.position, transform.position);
 
             float scale = Mathf.Lerp(minScale, maxScale, 1 - Mathf.InverseLerp(minDistance, maxDistance, distance)) * scaleVariety;
-            transform.DOScale(scale, 0.5f);
+            transform.localScale = Vector3.one * scale;
 
             float lerpValue = Mathf.InverseLerp(minDistance, maxDistance, distance);
 
