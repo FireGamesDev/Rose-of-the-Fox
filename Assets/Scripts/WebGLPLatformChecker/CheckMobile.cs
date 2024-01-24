@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CheckMobile : MonoBehaviour
 {
-    public bool IsMobile = false;
+    private bool IsMobile = true;
     public static CheckMobile Instance;
 
     private void Awake()
